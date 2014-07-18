@@ -1,0 +1,96 @@
+#card_separador{
+height:10px;
+width:100%;
+border-bottom: 1px solid #ccc;
+
+
+}
+
+#card_imagen{
+text-align:center;
+}
+
+
+#MenuPrincipal{
+background-image: url("fondo.jpg");
+}
+
+#cuadrosmenu{
+border-style: solid;
+    border-color: red;
+}
+
+#botonera{
+width:70%;
+text-align:center;
+margin-right:auto;
+margin-left:auto;
+margin-top:7%;
+opacity: 0.8;
+}
+
+#menu_boton{
+
+background-color:#000;
+padding:0.5%;
+
+
+margin-bottom:7%;
+
+    border-style: solid;
+    border-width: 1px;
+	border-color:#000;
+	
+	
+	
+	
+}
+
+
+#menu_boton:active{
+opacity: 0.4;
+    border-style: solid;
+    border-width: 1px;
+	border-color:#000;
+}
+
+#menu_boton:hover{
+opacity: 0.4;
+    border-style: solid;
+    border-width: 1px;
+	border-color:#000;
+}
+			
+#menu_boton a {
+
+
+color:#F0F0F0 !important;
+
+}			
+			
+	
+
+
+.botonpartido1{
+width:45%;
+float:left;
+
+}	
+
+.botonpartido2{
+width:45%;
+float:right;
+
+}	
+
+
+
+
+
+
+
+
+
+
+
+

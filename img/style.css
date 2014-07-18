@@ -1,0 +1,25 @@
+#card_separador{
+height:10px;
+width:100%;
+border-bottom: 1px solid #ccc;
+
+
+}
+
+#card_imagen{
+text-align:center;
+}
+
+
+#menu{
+background-image: url("fondo.jpg");
+
+
+}
+
+#menu_boton{
+width:33%;
+min-height:33%;
+float:left;
+
+}

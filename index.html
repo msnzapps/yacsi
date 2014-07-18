@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>nativeDroid - Theme for jQuery Mobile</title>
+		
+		 <meta name="content type"  content="text/html;" http-equiv="content-type" charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		
+		
+		
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+
+		
+		
+		
+		
+		
+		
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		
+		    <script>
+			//esto es para cargar el menu principal como primera pagina, sin estar colocada la primera en codigo (si la ponemos la primera aparece un problema raro de parpadeo...esto es un feo apaño... pero parece ke funciona)
+           //OJO tiene que ir aki colocado, antes de ke cargue el jquery MOBILE
+		   $(document).on("mobileinit",function() {
+                $.mobile.autoInitializePage = false;
+            });        
+			</script>
+		
+		
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+		
+		
+		
+		
+		<!-- Extras for: Cards.html -->
+	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+		
+		
+		<!-- Mi CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+		
+
+		
+		
+
+
+
+			<!-- Mi Javascript propio -->
+		<script src="http://msnzapps.com/coleccion/kamasutra/js/miJS.js"></script>
+		
+    </head>
+    <body>
+
+	
+	
+
+
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- Start -->	
+<div data-role="page" data-theme='b' id="page_vertodas">
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="index.html" data-ajax="false"><i class='fa fa-bars'></i></a>
+            <h1>Cards</h1>
+        </div>
+        
+        <div data-role="content">   
+		<br>	
+		<ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+
+            <li id="li1" style="" >
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-9);">
+                
+				<img id="idimg1" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+                <h2  id="titulo1"></h2>								
+                <p id="txtt1"></p>
+
+             </a>
+			</li>
+
+			<br>
+			
+            <li id="li2" style="">
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-8);">
+               
+				<img id="idimg2" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+				<h2  id="titulo2"></h2>
+                <p id="txtt2"></p>
+				
+             </a>
+			</li>
+
+			<br>		
+			
+            <li id="li3" style="">
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-7);">
+			 
+                <img id="idimg3" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+                <h2  id="titulo3"></h2>
+                <p id="txtt3"></p>
+				
+             </a>
+			</li>
+
+			<br>
+			
+            <li id="li4" style="">
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-6);">
+			 
+                <img id="idimg4" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+                <h2  id="titulo4"></h2>
+                <p id="txtt4"></p>
+				
+             </a>
+			</li>
+
+			<br>			
+			
+            <li id="li5" style="">
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-5);">
+			 
+                <img id="idimg5" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+                <h2  id="titulo5"></h2>
+                <p id="txtt5"></p>
+				
+             </a>
+			</li>
+
+			<br>	
+
+            <li id="li6" style="">
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-4);">
+			 
+                <img id="idimg6" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+                <h2  id="titulo6"></h2>
+                <p id="txtt6"></p>
+				
+             </a>
+			</li>
+
+			<br>
+
+            <li id="li7" style="">
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-3);">
+			 
+                <img id="idimg7" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+                <h2  id="titulo7"></h2>
+                <p id="txtt7"></p>
+				
+             </a>
+			</li>
+
+			<br>
+
+            <li id="li8" style="">
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-2);">
+			 
+                <img id="idimg8" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+                <h2  id="titulo8"></h2>
+                <p id="txtt8"></p>
+				
+             </a>
+			</li>
+
+			<br>	
+
+            <li id="li9" style="">
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-1);">
+			 
+                <img id="idimg9" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+                <h2  id="titulo9"></h2>
+                <p id="txtt9"></p>
+				
+             </a>
+			</li>
+
+			<br>
+			
+            <li id="li10" style="">
+			 <a href="#page_ver_una" onclick="VerTarjeta((PagActual*10)-0);">
+			 
+                <img id="idimg10" src="" width="150" height="150">
+				<p style="float:right;" class="ui-btn ui-btn-icon-right ui-icon-carat-r"></p>
+                <h2  id="titulo10"></h2>
+                <p id="txtt10"></p>
+				
+             </a>
+			</li>
+
+			<br>			
+			
+			
+        </ul>   
+        </div>
+		
+		
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b' data-id="footer_ver_todas">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page_vertodas" onclick="PagActual=PagActual-1;Recargar_Ver_Todas();refreshPage();"><i class='blIcon fa fa-chevron-left'></i>Atrás</a></li>
+					<li><a href="#MenuPrincipal"><i class='blIcon fa fa-home'></i>Inicio</a></li>
+					<li><a href="#page_vertodas" onclick="PagActual=PagActual+1; Recargar_Ver_Todas();refreshPage();"><i class='blIcon fa fa-chevron-right'></i>Siguiente</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+</div>
+<!-- Fin -->		
+	
+	
+
+
+
+	
+
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+<!-- Start -->
+<div data-role="page" data-theme='b' id="page_ver_una">
+
+
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="index.html" data-ajax="false"><i class='fa fa-bars'></i></a>
+            <h1>Cards</h1>
+        </div>
+        
+        <div data-role="content">   
+
+
+			<ul data-nativedroid-plugin='cards'>
+	
+				<li id="licard" data-cards-type='text'>
+				
+					<h1 id="card_titulo1"></h1>
+					<div id="card_separador"></div>
+					<br>
+					<div id="card_imagen"><img id="card_idimg1" src=""></div>	
+					<p id="card_txtt1"></p>
+
+				</li>
+							
+
+			</ul>
+
+	        
+        </div>
+
+
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b' >
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-rel="back"><i class='blIcon fa fa-chevron-left'></i>Atrás</a></li>
+					<li><a href="#MenuPrincipal"><i class='blIcon fa fa-home'></i>Inicio</a></li>
+					<li><a href="#page_ver_una" onclick="VerTarjeta(IdCardActual+1);"><i class='blIcon fa fa-chevron-right'></i>Siguiente</a></li>
+				</ul>
+			</div>
+		</div>
+
+</div>
+<!-- Fin -->	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- Start -->	
+    <div data-role="page" data-theme='b' id="Buscar">
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="index.html" data-ajax="false"><i class='fa fa-bars'></i></a>
+            <h1>Autocomplete</h1>
+        </div>
+        
+        <div data-role="content">   
+
+		<div class='inset'>
+            
+	        <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search..." data-filter-theme="b" id="lista_buscar" >
+
+<!--No me preguntes por qué pero si kitas el siguiente li, no funciona. (como no molesta, lo dejo)-->
+				<li></li>
+
+
+		
+				
+
+				
+				
+				
+				
+	        </ul>
+            
+		</div>
+	        
+	        
+        </div>
+
+    </div>	
+<!-- Fin -->	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Start -->
+<div data-role="page" data-theme='b'  id="MenuPrincipal">
+ <div data-role="content" id="botonera">
+
+<div id="menu_boton"><a href="#page_vertodas" ><i class='blIcon fa fa-list'></i>Ver Posturas</a></div>
+<div id="menu_boton"><a href="#Buscar" onclick="DatosAutocomplete();" ><i class='blIcon fa fa-search'></i>Buscar</a></div>
+<div id="menu_boton"><a href="index.html" ><i class='blIcon fa fa-heart-o'></i>Postura del día</a></div>
+<div id="menu_boton"><a href="index.html" ><i class='blIcon fa fa-trophy'></i>Mejores Posturas</a></div>
+
+<div id="menu_boton" class="botonpartido1"><a href="index.html" ><i class='blIcon fa fa-star'></i>Valoranos</a></div>
+<div id="menu_boton" class="botonpartido2"><a href=""  ><i class='blIcon fa fa-info'></i>App info</a></div>
+
+	
+
+  </div>
+  
+  
+</div>
+<!-- Fin -->	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    
+    <script src="js/nativedroid.script.js"></script>
+    </body>
+</html>
